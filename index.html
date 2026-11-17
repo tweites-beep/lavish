@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Lavish Affiliate: Holiday Edition by ECMG Creative Studios.">
+  <title>The Lavish Affiliate | ECMG Creative Studios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#0d0d0e; --smoke:#181719; --paper:#f6f1e8; --ivory:#fcf9f2; --gold:#c5a059; --plum:#5a163c; --plum-light:#9a3f69; --muted:#bcb3a7; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--ink); color:var(--paper); font-family:Montserrat,Arial,sans-serif; }
+    a { color:inherit; }
+    .wrap { width:min(1180px, calc(100% - 48px)); margin:0 auto; }
+    .eyebrow { color:var(--gold); font:500 11px/1.2 "DM Mono",monospace; letter-spacing:.17em; text-transform:uppercase; }
+    .topbar { background:var(--gold); color:#16120e; text-align:center; padding:11px 18px; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:26px 0; border-bottom:1px solid rgba(246,241,232,.17); }
+    .brand { font-weight:700; font-size:16px; letter-spacing:.08em; }
+    .brand span { color:var(--gold); }
+    .nav-note { font:400 10px "DM Mono",monospace; letter-spacing:.08em; color:var(--muted); text-transform:uppercase; }
+    .hero { min-height:760px; padding:70px 0 96px; position:relative; overflow:hidden; background:radial-gradient(circle at 77% 30%, rgba(127,28,76,.48), transparent 25%), linear-gradient(120deg,#0c0c0d 25%,#21141c 100%); }
+    .hero:after { content:""; position:absolute; width:600px; height:600px; right:-290px; top:42px; border:1px solid rgba(197,160,89,.4); border-radius:50%; box-shadow:0 0 0 48px rgba(197,160,89,.035),0 0 0 112px rgba(197,160,89,.025); }
+    .hero-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:46px; align-items:center; position:relative; z-index:1; }
+    h1 { font:600 clamp(52px,7.2vw,105px)/.93 "Playfair Display",Georgia,serif; letter-spacing:-.055em; margin:16px 0 25px; max-width:790px; }
+    h1 em { color:var(--gold); font-weight:500; }
+    .hero-copy { max-width:570px; color:#dfd7cd; font-size:17px; line-height:1.75; }
+    .offer-line { max-width:540px; margin:0 0 18px; color:var(--gold); font:500 12px/1.5 "DM Mono",monospace; letter-spacing:.09em; text-transform:uppercase; }
+    .hero-copy strong { color:var(--paper); }
+    .hero-card { max-width:410px; justify-self:end; position:relative; padding:26px; background:rgba(10,10,11,.68); border:1px solid rgba(197,160,89,.45); box-shadow:0 25px 70px rgba(0,0,0,.45); }
+    .hero-card:before { content:"Holiday Edition"; position:absolute; right:18px; top:13px; color:var(--gold); font:10px "DM Mono",monospace; letter-spacing:.1em; text-transform:uppercase; }
+    .price { font:600 68px/.9 "Playfair Display",Georgia,serif; margin:46px 0 12px; }
+    .price sup { font:500 24px Montserrat,sans-serif; letter-spacing:0; vertical-align:top; }
+    .hero-card p { color:var(--muted); font-size:13px; line-height:1.65; }
+    .button { display:inline-block; border:0; background:var(--gold); color:#18110d; text-decoration:none; padding:17px 23px; margin-top:16px; font:700 12px Montserrat,Arial,sans-serif; letter-spacing:.09em; text-transform:uppercase; transition:.2s ease; cursor:pointer; }
+    .button:hover { background:#dfbe7c; transform:translateY(-2px); }
+    .button.dark { background:var(--ink); color:var(--paper); border:1px solid rgba(246,241,232,.35); }
+    .micro { display:block; color:#a69d92; font-size:10px; line-height:1.55; margin-top:12px; }
+    .manifesto { padding:110px 0; background:var(--paper); color:var(--ink); }
+    .manifesto-grid { display:grid; grid-template-columns:1fr 1.3fr; gap:80px; align-items:start; }
+    h2 { font:600 clamp(36px,5vw,64px)/1 "Playfair Display",Georgia,serif; letter-spacing:-.045em; margin:12px 0 0; }
+    .statement { font:500 clamp(22px,2.4vw,34px)/1.42 "Playfair Display",Georgia,serif; letter-spacing:-.02em; margin:0; }
+    .statement em { color:var(--plum); }
+    .rule { width:68px; height:1px; background:var(--gold); margin:35px 0; }
+    .body-copy { font-size:15px; line-height:1.8; color:#4d4740; max-width:610px; }
+    .content-section { padding:110px 0; background:#121114; }
+    .section-head { display:flex; justify-content:space-between; gap:30px; align-items:end; margin-bottom:45px; }
+    .section-head p { max-width:400px; color:var(--muted); font-size:14px; line-height:1.7; }
+    .asset-grid { display:grid; grid-template-columns:1.08fr .92fr; gap:38px; align-items:center; }
+    .comp-card { width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; border:1px solid rgba(197,160,89,.45); display:block; box-shadow:0 25px 70px rgba(0,0,0,.4); }
+    .asset-list { list-style:none; padding:0; margin:0; counter-reset:item; }
+    .asset-list li { counter-increment:item; padding:18px 0 18px 53px; border-top:1px solid rgba(246,241,232,.18); position:relative; font-size:16px; line-height:1.45; }
+    .asset-list li:before { content:"0" counter(item); position:absolute; left:0; color:var(--gold); font:14px "DM Mono",monospace; }
+    .asset-list small { display:block; color:var(--muted); font-size:12px; line-height:1.55; margin-top:4px; }
+    .steps { padding:110px 0; background:var(--smoke); }
+    .steps-grid { display:grid; grid-template-columns:repeat(4,1fr); margin-top:52px; border-top:1px solid rgba(197,160,89,.4); }
+    .step { min-height:255px; padding:27px 27px 25px 0; margin-right:27px; border-right:1px solid rgba(246,241,232,.16); }
+    .step:last-child { border:0; }
+    .step-num { color:var(--gold); font:12px "DM Mono",monospace; }
+    h3 { font:600 26px/1.1 "Playfair Display",Georgia,serif; letter-spacing:-.025em; margin:22px 0 14px; }
+    .step p { color:var(--muted); font-size:13px; line-height:1.65; margin:0; }
+    .included { padding:110px 0; color:var(--ink); background:linear-gradient(130deg,#e9dfd0,#f9f5ed); }
+    .included-wrap { display:grid; grid-template-columns:1fr 1fr; gap:80px; }
+    .included ul { list-style:none; padding:0; margin:24px 0 0; }
+    .included li { border-top:1px solid rgba(13,13,14,.17); padding:16px 0; font-size:15px; display:flex; justify-content:space-between; gap:15px; }
+    .included li:after { content:"+"; color:var(--plum); font-size:20px; line-height:.8; }
+    .callout { margin-top:12px; padding:32px; background:var(--plum); color:var(--ivory); }
+    .callout .eyebrow { color:#e8c97f; }
+    .callout p { font:500 25px/1.32 "Playfair Display",Georgia,serif; margin:16px 0 0; }
+    .faq { padding:110px 0; background:#111012; }
+    .faq-grid { display:grid; grid-template-columns:.75fr 1.25fr; gap:90px; }
+    details { border-top:1px solid rgba(246,241,232,.2); padding:21px 0; }
+    details:last-child { border-bottom:1px solid rgba(246,241,232,.2); }
+    summary { cursor:pointer; font-weight:600; font-size:15px; list-style:none; display:flex; justify-content:space-between; gap:20px; }
+    summary:after { content:"+"; color:var(--gold); font-size:22px; line-height:.7; }
+    details[open] summary:after { content:"–"; }
+    details p { color:var(--muted); font-size:13px; line-height:1.7; max-width:650px; }
+    .final { padding:110px 0 35px; text-align:center; background:radial-gradient(circle at 50% 10%,rgba(125,32,78,.52),transparent 32%),#0c0c0d; }
+    .final h2 { max-width:800px; margin:15px auto 16px; }
+    .final p { color:var(--muted); max-width:600px; margin:0 auto; line-height:1.75; font-size:15px; }
+    footer { padding:55px 0 5px; color:#91877c; font:10px/1.8 "DM Mono",monospace; letter-spacing:.03em; text-align:left; }
+    .modal-shell { position:fixed; inset:0; z-index:20; display:none; place-items:center; padding:20px; background:rgba(0,0,0,.84); backdrop-filter:blur(10px); }
+    .modal-shell.is-open { display:grid; }
+    .modal { position:relative; width:min(100%,700px); max-height:calc(100vh - 40px); overflow:auto; padding:48px 58px 42px; background:#151516; border:1px solid rgba(246,241,232,.22); border-top:3px solid var(--gold); box-shadow:0 30px 90px rgba(0,0,0,.6); }
+    .modal-close { position:absolute; top:14px; right:16px; appearance:none; border:0; background:transparent; color:#9f978d; font-size:40px; font-weight:200; line-height:1; cursor:pointer; }
+    .modal h2 { margin:14px 0 20px; font:600 clamp(35px,5vw,58px)/.98 "Playfair Display",Georgia,serif; }
+    .modal-intro { max-width:560px; color:#c9c1b7; font-size:15px; line-height:1.7; }
+    .terms-box { margin:28px 0 23px; padding:26px; border:1px solid rgba(246,241,232,.13); }
+    .checkline { display:grid; grid-template-columns:28px 1fr; align-items:start; gap:16px; cursor:pointer; }
+    .checkline input { width:23px; height:23px; margin:2px 0 0; accent-color:var(--gold); cursor:pointer; }
+    .checkline p { margin:0; color:#c7bfb5; font-size:14px; line-height:1.72; }
+    .checkline p + p { margin-top:21px; }
+    .checkline strong { color:var(--paper); }
+    .purchase-button { width:100%; appearance:none; border:0; background:var(--gold); color:#18110d; padding:19px 20px; font:700 12px Montserrat,Arial,sans-serif; letter-spacing:.12em; text-transform:uppercase; opacity:.42; cursor:not-allowed; transition:.2s ease; }
+    .purchase-button.is-ready { opacity:1; cursor:pointer; }
+    .purchase-button.is-ready:hover { background:#dfbe7c; transform:translateY(-2px); }
+    .modal-note { margin:19px 0 0; color:#9d948a; text-align:center; font-size:12px; line-height:1.65; }
+    @media (max-width:800px) { .wrap { width:min(100% - 32px,1180px); } .hero { min-height:auto; padding:50px 0 70px; } .hero-grid,.manifesto-grid,.asset-grid,.included-wrap,.faq-grid { grid-template-columns:1fr; gap:34px; } .hero-card { justify-self:start; max-width:470px; } .steps-grid { grid-template-columns:1fr 1fr; } .step:nth-child(2) { border:0; } .step { min-height:220px; } .section-head { display:block; } .nav-note { display:none; } }
+    @media (max-width:500px) { h1 { font-size:53px; } .steps-grid { grid-template-columns:1fr; } .step { border-right:0; border-bottom:1px solid rgba(246,241,232,.16); margin:0; } .step:last-child { border-bottom:0; } .price { font-size:56px; } .modal-shell { padding:12px; } .modal { max-height:calc(100vh - 24px); padding:40px 23px 28px; } .terms-box { padding:20px; } .modal-close { top:9px; right:11px; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">Holiday Edition · Ten Founding Seats Only</div>
+  <header class="hero">
+    <div class="wrap">
+      <nav>
+        <div class="brand">ECMG <span>CREATIVE STUDIOS</span></div>
+        <div class="nav-note">Luxury AI · Brand Design · Story</div>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">The Lavish Affiliate</div>
+          <h1>Do not post the link.<br><em>Build the desire.</em></h1>
+          <p class="offer-line">Your full campaign system for selling premium products with precision.</p>
+          <p class="hero-copy">A self-paced, step-by-step system for turning one premium affiliate product into an organic campaign people want to click, save, share, and buy—using AI, visual direction, and a real conversion strategy.</p>
+          <button class="button" type="button" data-kofi>Get the Holiday Edition</button>
+          <span class="micro">Recorded training, templates, and a defined Campaign Clarity Call—built to help you move with intention.</span>
+        </div>
+        <aside class="hero-card">
+          <div class="price"><sup>$</sup>1,500</div>
+          <p>One recorded walkthrough. Your campaign-in-a-box. One 20-minute Campaign Clarity Call to keep you moving.</p>
+          <p><strong>For people ready to build one real campaign—not collect another dusty download.</strong></p>
+          <button class="button" type="button" data-kofi>Reserve Your Seat</button>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <section class="manifesto">
+    <div class="wrap manifesto-grid">
+      <div>
+        <div class="eyebrow">The premise</div>
+        <h2>One product.<br>One campaign.<br>One clear path.</h2>
+      </div>
+      <div>
+        <p class="statement">You do not need inventory, a warehouse, or a brand deal to create content that feels <em>expensive, intentional, and built to convert.</em></p>
+        <div class="rule"></div>
+        <p class="body-copy">You need a product worth talking about, a buyer with a real desire, and a system that turns the gap between those two things into a campaign. This is that system.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="eyebrow">What you are building</div><h2>A campaign, not a content pile.</h2></div>
+        <p>You will learn how to give a premium product a world, an occasion, a visual point of view, and a reason to buy now.</p>
+      </div>
+      <div class="asset-grid">
+        <img class="comp-card" src="assets/luxury-affiliate-campaign-compcard.png" alt="Six-panel example of a premium affiliate beauty campaign" width="1440" height="1080" loading="eager" fetchpriority="high" decoding="async">
+        <ol class="asset-list">
+          <li>Choose the product with real campaign potential.<small>Not everything with an affiliate link deserves your energy.</small></li>
+          <li>Find the buyer desire hiding behind it.<small>She is not buying a jar, dress, or gadget; she is buying the moment it unlocks.</small></li>
+          <li>Build six visuals around one product world.<small>Enough creative direction for a week of organic publishing.</small></li>
+          <li>Turn still images into short-form motion.<small>Use the prompts and structure to create vertical video without starting from scratch.</small></li>
+          <li>Place the link after desire is earned.<small>Make buying the natural next step—not the whole conversation.</small></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap">
+      <div class="eyebrow">The framework</div>
+      <h2>From product to purchase path.</h2>
+      <div class="steps-grid">
+        <article class="step"><div class="step-num">01 / SELECT</div><h3>Pick the right product.</h3><p>Choose premium offers with a clear buyer, compelling visual potential, and a commission worth the campaign effort.</p></article>
+        <article class="step"><div class="step-num">02 / POSITION</div><h3>Give it a world.</h3><p>Move beyond features and create an occasion, aspiration, or ritual that makes the product emotionally specific.</p></article>
+        <article class="step"><div class="step-num">03 / PRODUCE</div><h3>Build the creative.</h3><p>Create luxury visuals, motion concepts, captions, and a social sequence that make people stop scrolling.</p></article>
+        <article class="step"><div class="step-num">04 / PUBLISH</div><h3>Make buying easy.</h3><p>Use an organic, disclosure-forward distribution plan that lets your content do the invitation and your link do the work.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="included">
+    <div class="wrap included-wrap">
+      <div>
+        <div class="eyebrow">Inside the Holiday Edition</div>
+        <h2>Everything you need to begin publishing.</h2>
+        <ul>
+          <li>Complete recorded campaign-building walkthrough</li>
+          <li>Premium product-selection criteria</li>
+          <li>Six-image comp-card framework</li>
+          <li>AI image and video prompt pack</li>
+          <li>Hook, caption, Story, and CTA templates</li>
+          <li>Affiliate-link placement and disclosure guide</li>
+          <li>Organic holiday publishing plan</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <div class="eyebrow">The connection matters</div>
+        <p>Every Holiday Edition purchase includes one 20-minute Campaign Clarity Call, booked within 14 days of purchase.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap faq-grid">
+      <div><div class="eyebrow">Clear answers</div><h2>This is not vague AI talk.</h2></div>
+      <div>
+        <details open><summary>Is this live?</summary><p>No. You receive the full recorded training immediately, so you can work at your pace. Your purchase also includes one defined Campaign Clarity Call for questions specific to the campaign you are building.</p></details>
+        <details><summary>Will this guarantee affiliate income?</summary><p>No. This is a strategy and implementation system, not an income promise. Results depend on the product, audience, content, offer, timing, and execution. You will leave with a real campaign framework—not hype.</p></details>
+        <details><summary>Do I need to use Amazon?</summary><p>No. The system teaches campaign thinking that can support affiliate links and other product referral relationships. The Holiday Edition includes guidance for Amazon affiliate disclosure and organic publishing.</p></details>
+        <details><summary>Why is this limited to ten seats?</summary><p>The training is self-paced, but each buyer receives direct Campaign Clarity Call access. Ten seats protects the quality of that support.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <div class="eyebrow">Ten Founding Seats · Holiday Edition</div>
+      <h2>Stop dropping links.<br>Start building campaigns.</h2>
+      <p>Use the holiday buying season to build one campaign you can repeat long after the decorations come down.</p>
+      <button class="button" type="button" data-kofi>Get The Lavish Affiliate</button>
+      <span class="micro">$1,500 · Immediate recorded access · One defined Campaign Clarity Call</span>
+      <footer>© <span id="year"></span> ECMG Creative Studios. As an Amazon Associate I earn from qualifying purchases. This site is not affiliated with or endorsed by Amazon.</footer>
+    </div>
+  </section>
+  <div class="modal-shell" id="purchase-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal-close" type="button" aria-label="Close purchase confirmation">×</button>
+      <div class="eyebrow">Before you proceed</div>
+      <h2 id="modal-title">Confirm your purchase.</h2>
+      <p class="modal-intro">Please review and accept the terms below before continuing to secure your Holiday Edition access.</p>
+      <div class="terms-box">
+        <label class="checkline" for="purchase-terms">
+          <input id="purchase-terms" type="checkbox">
+          <span>
+            <p>This is a <strong>focused, self-paced campaign system</strong> with immediate access to digital training, templates, and one complimentary Campaign Clarity Call.</p>
+            <p>Once purchased, your access, support window, and preparation begin immediately. Because the materials and strategy are made available at once, <strong>all sales are final and non-refundable.</strong></p>
+            <p>This is a strategic education and implementation resource; individual results will vary based on product selection, audience, execution, and consistency.</p>
+            <p>I am purchasing intentionally and agree to these terms.</p>
+          </span>
+        </label>
+      </div>
+      <button class="purchase-button" id="proceed-to-kofi" type="button">Proceed to Purchase →</button>
+      <p class="modal-note">After purchase, check your email for training access and instructions to schedule your Campaign Clarity Call.</p>
+    </div>
+  </div>
+  <script>
+    // Direct Ko-fi checkout link supplied by ECMG.
+    const KOFI_URL = 'https://ko-fi.com/summary/2f764809-d472-44ef-9e00-20ecefb737a5';
+    const modal = document.getElementById('purchase-modal');
+    const terms = document.getElementById('purchase-terms');
+    const proceed = document.getElementById('proceed-to-kofi');
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const closeModal = () => {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+    };
+    const openModal = () => {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.querySelector('.modal-close').focus();
+    };
+
+    document.querySelectorAll('[data-kofi]').forEach((button) => {
+      button.addEventListener('click', openModal);
+    });
+    terms.addEventListener('change', () => proceed.classList.toggle('is-ready', terms.checked));
+    proceed.addEventListener('click', () => {
+      if (terms.checked) window.open(KOFI_URL, '_blank', 'noopener');
+    });
+    document.querySelector('.modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', (event) => { if (event.target === modal) closeModal(); });
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeModal(); });
+  </script>
+</body>
+</html>
